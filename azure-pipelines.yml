@@ -14,5 +14,7 @@ steps:
   inputs:
     actions: 'build'
     scheme: 'Release'
-    packageApp: false
-    destinationPlatformOption: 'custom'
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
