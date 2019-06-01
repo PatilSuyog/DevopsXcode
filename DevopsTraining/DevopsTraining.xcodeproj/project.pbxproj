@@ -12,26 +12,7 @@
 		7AF87D8C22A25750002661B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF87D8A22A25750002661B7 /* Main.storyboard */; };
 		7AF87D8E22A25764002661B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF87D8D22A25764002661B7 /* Assets.xcassets */; };
 		7AF87D9122A25764002661B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF87D8F22A25764002661B7 /* LaunchScreen.storyboard */; };
-		7AF87D9C22A25764002661B7 /* DevopsTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF87D9B22A25764002661B7 /* DevopsTrainingTests.swift */; };
-		7AF87DA722A25765002661B7 /* DevopsTrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF87DA622A25765002661B7 /* DevopsTrainingUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7AF87D9822A25764002661B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7AF87D7B22A25750002661B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AF87D8222A25750002661B7;
-			remoteInfo = DevopsTraining;
-		};
-		7AF87DA322A25764002661B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7AF87D7B22A25750002661B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AF87D8222A25750002661B7;
-			remoteInfo = DevopsTraining;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7AF87D8322A25750002661B7 /* DevopsTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevopsTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,30 +22,10 @@
 		7AF87D8D22A25764002661B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF87D9022A25764002661B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF87D9222A25764002661B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AF87D9722A25764002661B7 /* DevopsTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevopsTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AF87D9B22A25764002661B7 /* DevopsTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevopsTrainingTests.swift; sourceTree = "<group>"; };
-		7AF87D9D22A25764002661B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AF87DA222A25764002661B7 /* DevopsTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevopsTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AF87DA622A25765002661B7 /* DevopsTrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevopsTrainingUITests.swift; sourceTree = "<group>"; };
-		7AF87DA822A25765002661B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7AF87D8022A25750002661B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AF87D9422A25764002661B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AF87D9F22A25764002661B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				7AF87D8522A25750002661B7 /* DevopsTraining */,
-				7AF87D9A22A25764002661B7 /* DevopsTrainingTests */,
-				7AF87DA522A25764002661B7 /* DevopsTrainingUITests */,
 				7AF87D8422A25750002661B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				7AF87D8322A25750002661B7 /* DevopsTraining.app */,
-				7AF87D9722A25764002661B7 /* DevopsTrainingTests.xctest */,
-				7AF87DA222A25764002661B7 /* DevopsTrainingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,24 +62,6 @@
 				7AF87D9222A25764002661B7 /* Info.plist */,
 			);
 			path = DevopsTraining;
-			sourceTree = "<group>";
-		};
-		7AF87D9A22A25764002661B7 /* DevopsTrainingTests */ = {
-			isa = PBXGroup;
-			children = (
-				7AF87D9B22A25764002661B7 /* DevopsTrainingTests.swift */,
-				7AF87D9D22A25764002661B7 /* Info.plist */,
-			);
-			path = DevopsTrainingTests;
-			sourceTree = "<group>";
-		};
-		7AF87DA522A25764002661B7 /* DevopsTrainingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7AF87DA622A25765002661B7 /* DevopsTrainingUITests.swift */,
-				7AF87DA822A25765002661B7 /* Info.plist */,
-			);
-			path = DevopsTrainingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +84,6 @@
 			productReference = 7AF87D8322A25750002661B7 /* DevopsTraining.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7AF87D9622A25764002661B7 /* DevopsTrainingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AF87DAE22A25765002661B7 /* Build configuration list for PBXNativeTarget "DevopsTrainingTests" */;
-			buildPhases = (
-				7AF87D9322A25764002661B7 /* Sources */,
-				7AF87D9422A25764002661B7 /* Frameworks */,
-				7AF87D9522A25764002661B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AF87D9922A25764002661B7 /* PBXTargetDependency */,
-			);
-			name = DevopsTrainingTests;
-			productName = DevopsTrainingTests;
-			productReference = 7AF87D9722A25764002661B7 /* DevopsTrainingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7AF87DA122A25764002661B7 /* DevopsTrainingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AF87DB122A25765002661B7 /* Build configuration list for PBXNativeTarget "DevopsTrainingUITests" */;
-			buildPhases = (
-				7AF87D9E22A25764002661B7 /* Sources */,
-				7AF87D9F22A25764002661B7 /* Frameworks */,
-				7AF87DA022A25764002661B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AF87DA422A25764002661B7 /* PBXTargetDependency */,
-			);
-			name = DevopsTrainingUITests;
-			productName = DevopsTrainingUITests;
-			productReference = 7AF87DA222A25764002661B7 /* DevopsTrainingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,14 +96,6 @@
 				TargetAttributes = {
 					7AF87D8222A25750002661B7 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					7AF87D9622A25764002661B7 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 7AF87D8222A25750002661B7;
-					};
-					7AF87DA122A25764002661B7 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 7AF87D8222A25750002661B7;
 					};
 				};
 			};
@@ -218,8 +113,6 @@
 			projectRoot = "";
 			targets = (
 				7AF87D8222A25750002661B7 /* DevopsTraining */,
-				7AF87D9622A25764002661B7 /* DevopsTrainingTests */,
-				7AF87DA122A25764002661B7 /* DevopsTrainingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,20 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AF87D9522A25764002661B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AF87DA022A25764002661B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,36 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AF87D9322A25764002661B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AF87D9C22A25764002661B7 /* DevopsTrainingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AF87D9E22A25764002661B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AF87DA722A25765002661B7 /* DevopsTrainingUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7AF87D9922A25764002661B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AF87D8222A25750002661B7 /* DevopsTraining */;
-			targetProxy = 7AF87D9822A25764002661B7 /* PBXContainerItemProxy */;
-		};
-		7AF87DA422A25764002661B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AF87D8222A25750002661B7 /* DevopsTraining */;
-			targetProxy = 7AF87DA322A25764002661B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7AF87D8A22A25750002661B7 /* Main.storyboard */ = {
@@ -466,88 +316,6 @@
 			};
 			name = Release;
 		};
-		7AF87DAF22A25765002661B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SSYE6QZSP;
-				INFOPLIST_FILE = DevopsTrainingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winjit.DevopsTrainingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevopsTraining.app/DevopsTraining";
-			};
-			name = Debug;
-		};
-		7AF87DB022A25765002661B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SSYE6QZSP;
-				INFOPLIST_FILE = DevopsTrainingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winjit.DevopsTrainingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevopsTraining.app/DevopsTraining";
-			};
-			name = Release;
-		};
-		7AF87DB222A25765002661B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SSYE6QZSP;
-				INFOPLIST_FILE = DevopsTrainingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winjit.DevopsTrainingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DevopsTraining;
-			};
-			name = Debug;
-		};
-		7AF87DB322A25765002661B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SSYE6QZSP;
-				INFOPLIST_FILE = DevopsTrainingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.winjit.DevopsTrainingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DevopsTraining;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,24 +333,6 @@
 			buildConfigurations = (
 				7AF87DAC22A25765002661B7 /* Debug */,
 				7AF87DAD22A25765002661B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AF87DAE22A25765002661B7 /* Build configuration list for PBXNativeTarget "DevopsTrainingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AF87DAF22A25765002661B7 /* Debug */,
-				7AF87DB022A25765002661B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AF87DB122A25765002661B7 /* Build configuration list for PBXNativeTarget "DevopsTrainingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AF87DB222A25765002661B7 /* Debug */,
-				7AF87DB322A25765002661B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
