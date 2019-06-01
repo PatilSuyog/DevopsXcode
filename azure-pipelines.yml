@@ -62,8 +62,4 @@ steps:
     #cliFile: # Optional
     #showDebugOutput: # Optional
 
-    - task: CopyFiles@2
-  inputs:
-    contents: '**/*.ipa'
-    targetFolder: '$(build.artifactStagingDirectory)'
-- task: PublishBuildArtifacts@1
+    
