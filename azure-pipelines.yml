@@ -23,15 +23,15 @@ steps:
     xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
-    args: '-archivePath $(agent.buildDirectory)/DevopsTraining'
+    args: '-archivePath $(agent.buildDirectory)/devopsxcode'
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(agent.buildDirectory)/DevopsTraining.xcarchive/'
-    archiveFile: '$(build.artifactStagingDirectory)/DevopsTraining.xcarchive.zip'
+    rootFolderOrFile: '$(agent.buildDirectory)/devopsxcode.xcarchive/'
+    archiveFile: '$(build.artifactStagingDirectory)/devopsxcode.xcarchive.zip'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathToPublish: '$(build.artifactStagingDirectory)/DevopsTraining.xcarchive.zip'
+    pathToPublish: '$(build.artifactStagingDirectory)/devopsxcode.xcarchive.zip'
     artifactName: 'xcarchive-files'
     artifactType: 'container'
