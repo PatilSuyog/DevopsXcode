@@ -25,7 +25,7 @@ steps:
     packageApp: false
     args: '-archivePath $(agent.buildDirectory)/DevopsTraining'
 
-    - task: ArchiveFiles@2
+- task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(agent.buildDirectory)/DevopsTraining.xcarchive/'
     archiveFile: '$(build.artifactStagingDirectory)/DevopsTraining.xcarchive.zip'
