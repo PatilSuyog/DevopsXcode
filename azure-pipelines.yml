@@ -17,6 +17,7 @@ variables:
 steps:
 - task: Xcode@5
   inputs:
+    actions: 'build'
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
@@ -24,9 +25,6 @@ steps:
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 
+
     
-- task: ExtractFiles@1
-  inputs:
-    archiveFilePatterns: '.ipa'
-    destinationFolder: 'Test'
-    cleanDestinationFolder: true
+
