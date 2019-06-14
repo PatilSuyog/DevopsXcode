@@ -33,7 +33,7 @@ steps:
 
   inputs:
 
-    certSecureFile: Certificates.p12
+    certSecureFile: Certificate.cer
 
     #keychain: default
 
@@ -42,7 +42,11 @@ steps:
     deleteCert: false
 
 
-
-
-    
-
+# Install Apple Provisioning Profile
+# Install an Apple provisioning profile required to build on a macOS agent
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
+    provProfileSecureFile: 'Certificates'
+    #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
+    removeProfile: false
