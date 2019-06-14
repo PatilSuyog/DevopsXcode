@@ -36,6 +36,7 @@ steps:
    # exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
    # packageApp: false
 
+- task: Xcode@5
   inputs:
     actions: 'build'
     packageApp: true
@@ -43,4 +44,4 @@ steps:
     signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
     provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
     provisioningProfileName: 'RBLSiri.mobileprovision'
-    destinationPlatformOption: 'iOS''
+    destinationPlatformOption: 'iOS'
