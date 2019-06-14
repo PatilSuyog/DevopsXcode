@@ -27,7 +27,7 @@ steps:
 
 - task: InstallAppleCertificate@2
   inputs:
-    certSecureFile: 'RBLSiri'
+    certSecureFile: 'RBLSiri.p12'
     certPwd: '123456789'
 
 - task: InstallAppleProvisioningProfile@1
