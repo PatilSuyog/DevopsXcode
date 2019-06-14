@@ -25,28 +25,13 @@ steps:
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 
-
-
 - task: InstallAppleCertificate@2
-
-  displayName: 'Install an Apple certificate'
-
   inputs:
+    certSecureFile: 'RBLSiri'
+    certPwd: '123456789'
 
-    certSecureFile: Certificate.cer
-
-    #keychain: default
-
-    #keychainPassword: sdpatil24
-
-    deleteCert: false
-
-
-# Install Apple Provisioning Profile
-# Install an Apple provisioning profile required to build on a macOS agent
 - task: InstallAppleProvisioningProfile@1
   inputs:
-    provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
-    provProfileSecureFile: 'Certificates'
-    #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
-    removeProfile: false
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: 'RBLSiri.mobileprovision'
+   
