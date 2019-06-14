@@ -15,16 +15,6 @@ variables:
   configuration: 'Release'
 
 steps:
-- task: Xcode@5
-  inputs:
-    actions: 'build'
-    sdk: '$(sdk)'
-    scheme: '$(scheme)'
-    configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: false
-
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'RBLSiri.p12'
@@ -33,5 +23,24 @@ steps:
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
-    provProfileSecureFile: 'RBLSiri.mobileprovision'
-   
+    provProfileSecureFile: '- task: Xcode@5
+
+
+#- task: Xcode@5
+  #inputs:
+  #  actions: 'build'
+   # sdk: '$(sdk)'
+   # scheme: '$(scheme)'
+   # configuration: '$(configuration)'
+   # xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
+   # exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+   # packageApp: false
+
+  inputs:
+    actions: 'build'
+    packageApp: true
+    signingOption: 'manual'
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+    provisioningProfileName: 'RBLSiri.mobileprovision'
+    destinationPlatformOption: 'iOS''
