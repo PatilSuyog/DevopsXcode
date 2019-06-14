@@ -25,11 +25,35 @@ steps:
     provisioningProfileLocation: 'secureFiles'
     provProfileSecureFile: '- task: Xcode@5
 
+
+# - task: Xcode@5
+# inputs:
+# actions: 'build'
+# sdk: '$(sdk)'
+# scheme: '$(scheme)'
+# configuration: '$(configuration)'
+# xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
+# exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+# packageApp: false
+
+# - task: Xcode@5
+#   inputs:
+#     actions: 'build'
+#     packageApp: true
+#     signingOption: 'manual'
+#     signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+#   provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+#    provisioningProfileName: 'RBLSiri.mobileprovision'
+#     destinationPlatformOption: 'iOS'
+
+
 - task: Xcode@5
   inputs:
     actions: 'build'
-    signingOption: 'manual'
-    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
-    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
-    provisioningProfileName: 'RBLSiri.mobileprovision'
-    destinationPlatformOption: 'iOS'
+    scheme: ''
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+    signingOption: 'default' # Options: nosign, default, manual, auto
+    useXcpretty: 'false' # Makes it easier to diagnose build failures
