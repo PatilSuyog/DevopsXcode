@@ -35,9 +35,9 @@ steps:
 
     certSecureFile: Certificates.p12
 
-    keychain: default
+    #keychain: default
 
-    keychainPassword: sdpatil24
+    #keychainPassword: sdpatil24
 
     deleteCert: false
 
